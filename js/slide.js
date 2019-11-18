@@ -11,6 +11,10 @@
             var time = null;
             $(this).data('opts', opts);//给轮播对象添加参数 数据
             // next
+
+
+
+
             $(this).find('.ck-next').on('click', function(){
                 if(opts['isAnimate'] == true){
                     return;

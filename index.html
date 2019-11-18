@@ -28,22 +28,47 @@
 		<!-- html -->
 		<div class="ck-slide">
 			<ul class="ck-slide-wrapper">
+			
 				<li>
-                <a href="javascript:"><img src="img/slide/1.jpg" alt=""></a>
+                <a href="javascript:"><img src="img/slide/1.jpg" alt="">
+					<script>
+						$(document).ready(function(){
+						  $("img").click(function(){
+						   window.location.href = "img/pic/1.jpg";
+						  });
+						});
+					</script>
+				</a>
 				</li>
 				<li style="display:none">
-					<a href="javascript:"><img src="img/slide/2.jpg" alt=""></a>
+					<a href="javascript:"><img src="img/slide/2.jpg" alt="">
+						<script>
+							$(document).ready(function(){
+							  $("img").click(function(){
+							   window.location.href = "img/pic/2.jpg";
+							  });
+							});
+						</script>
+					</a>
 				</li>
 				<li style="display:none">
-					<a href="javascript:"><img src="img/slide/3.png" alt=""></a>
+					<a href="javascript:"><img src="img/slide/3.png" alt="">
+
+					</a>
 				</li>
 				<li style="display:none">
-					<a href="javascript:"><img src="img/slide/4.png" alt=""></a>
+					<a href="javascript:"><img src="img/slide/4.png" alt="">
+
+					</a>
 				</li>
 				<li style="display:none">
-					<a href="javascript:"><img src="img/slide/5.jpg" alt=""></a>
+					<a href="javascript:"><img src="img/slide/5.jpg" alt="">					
+
+					</a>
 				</li>
 			</ul>
+			
+			
 			<a href="javascript:;" class="ctrl-slide ck-prev">上一张</a> <a href="javascript:;" class="ctrl-slide ck-next">下一张</a>
 			<div class="ck-slidebox">
 				<div class="slideWrap">
@@ -72,6 +97,7 @@
 </div>
 
 <div id="footer" style="text-align:center;">
+<a href="pic.html">原图</a>
 <a href="咕咕咕.html">咕咕咕</a>
 </div>
 </body>
