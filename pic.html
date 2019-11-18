@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>图片轮播</title>
+</head>
+
+<body>
+<div class="main">
+	<div class="mianc">
+		<h1>图片轮播</h1>
+
+		<!-- Demo start -->
+		<!-- css -->
+		<link rel="stylesheet" href="css/slide.css">
+		<style>
+		.ck-slide { width: 700px; height: 394px; margin: 0 auto;}
+		.ck-slide ul.ck-slide-wrapper { height: 320px;}
+		</style>
+		
+		<!-- html -->
+		<div class="ck-slide">
+			<ul class="ck-slide-wrapper">
+				<li>
+                <a href="javascript:"><img src="img/slide/1.jpg" alt=""></a>
+				</li>
+				<li style="display:none">
+					<a href="javascript:"><img src="img/slide/2.jpg" alt=""></a>
+				</li>
+				<li style="display:none">
+					<a href="javascript:"><img src="img/slide/3.png" alt=""></a>
+				</li>
+				<li style="display:none">
+					<a href="javascript:"><img src="img/slide/4.png" alt=""></a>
+				</li>
+				<li style="display:none">
+					<a href="javascript:"><img src="img/slide/5.jpg" alt=""></a>
+				</li>
+			</ul>
+			<a href="javascript:;" class="ctrl-slide ck-prev">上一张</a> <a href="javascript:;" class="ctrl-slide ck-next">下一张</a>
+			<div class="ck-slidebox">
+				<div class="slideWrap">
+					<ul class="dot-wrap">
+						<li class="current"><em>1</em></li>
+						<li><em>2</em></li>
+						<li><em>3</em></li>
+						<li><em>4</em></li>
+						<li><em>5</em></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+        
+        <div class="zhushi">
+        <p>注：</p>
+        <p>源码来自slider插件，自行添加鼠标移入圆点标记切换方法，新增垂直滚动方法，提供设置自动播放时间间隔参数设置。</p>
+        <p>slide.min.js 源码</p>
+        <p>slide.js 原有基础上增加</p>
+        <p>目的：更好地理解插件，继而能更好的使用</p>
+        <p>IE7、IE8、IE9、FF下测试初步通过</p>
+        </div>
+		<!-- js -->
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<!--<script src="js/slide.min.js"></script>-->
+        <script src="js/slide.js"></script>
+		<script>
+			$('.ck-slide').ckSlide({
+				autoPlay: true,//默认为不自动播放，需要时请以此设置
+				dir: 'x',//默认效果淡隐淡出，x为水平移动，y 为垂直滚动
+				interval:3000//默认间隔2000毫秒
+				
+			});
+		</script>
+		<!-- Demo end -->
+
+		 
+	</div>
+</div>
+
+<style>
+* { margin: 0; padding: 0;}
+html, body { height: 100%; overflow: hidden;}
+.main h1 { width: 100%; margin: 40px auto; font: 32px "Microsoft Yahei"; text-align:center;}
+/*注释*/
+.zhushi{width:900px;margin: 30px auto; }/*注释*/
+.zhushi p{ line-height:24px; font-family:"微软雅黑";font-size:16px;text-align:left;}
+</style>
+
+</body>
+</html>
