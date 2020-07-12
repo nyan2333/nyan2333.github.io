@@ -7,6 +7,38 @@
 
     <title>index</title>
 
+<style type="text/css">
+body {
+	font-family: "微软雅黑", monospace;
+	background-image:url("01.jpg");
+	background-position:top;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	color: #FFF;
+}
+</style>
+<script>
+  
+var imgs =["img/pic/1.jpg",
+			"img/pic/2.jpg",
+			"img/pic/3.png",
+			"img/pic/4.png",
+			"img/pic/5.jpg",
+       ];  
+  
+var index=Math.floor(Math.random()*5);
+var img = imgs[index];
+    function time(){
+         
+       document.body.style.backgroundImage="url("+img+")";
+         
+    }  
+  
+document.body.onload = function(){
+ time();
+}
+</script>
+
   </head>
 
 <body>
