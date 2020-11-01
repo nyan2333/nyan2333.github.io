@@ -1,13 +1,13 @@
 *{
 	padding: 0px;
-	margin: 14px;
+	margin: 0px;
 	font-size: 16px;
 	font-family: "Microsoft YaHei";
 }
 .turnplate_box{
 	width: 300px;
 	height: 300px;
-	margin: 100px auto;
+	margin: 130px auto;
 	position: relative; 
 }
 .turnplate_box canvas{
