@@ -7,45 +7,132 @@
 
     <title>嘤嘤嘤 - index</title>
 	
-		<style>
+	<style>
 		body 
 		{
 			background-image:url("img/pic/bg.jpg");
 			background-position:top;
 			background-repeat:no-repeat;
 			background-attachment:fixed;
+			
 		}
-  	.btn_div
-  	{
-		text-align: center;
-		align-items: center;
-		padding: 60px;
-		margin-bottom: 60px;
+		.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}		
+		.column
+		{
+			margin: auto;
+			background: rgba(255,255,255,0.75);
+			width: 75%;
+			border: 3px solid green;
+			padding: 15px;
+			border-radius: 25px;
+		}
+	  	.btn_div
+	  	{
+			text-align: center;
+			align-items: center;
+			padding: 60px;
+			margin-bottom: 60px;
+		}
+		
+		
+    .top_bar_ul
+    {
+      list-style-type: none;
+      overflow:hidden;
+      background-color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .top_bar_ul li
+    {
+      float:left;
+      border-right:2px solid #bbb;
+    }
+    .top_bar_ul li:last-child 
+    {
+      border-right: none;
+    }
+    
+    .top_bar_ul li a
+    {
+		
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .top_bar_ul li a:hover:not(.top_index) 
+    {
+      background-color: #111;
+    }
+    .top_index
+    {
+      background-color: #4CAF50;
+    }
+		
+	.top_bar_margin
+	{
+		padding:0px;
+		margin-top:55px;
 	}
-  	#btn01
-  	{
-	  	border-radius: 23px;
-		background: linear-gradient(145deg, #4da7db, #5bc6ff);
-		box-shadow:  8px 8px 42px #3f89b4, 
-             -8px -8px 42px #6be9ff;
-	    text-align: center;
-		align-items: center;
-		margin-bottom: -30px;
-		color:#fff;
-		text-shadow: 2px 2px #ff0000;
-		line-height:500%
-		text-decoration:none;
-		letter-spacing:10px;
-		padding: 20px 40px 20px 40px;
-	}
+    @media screen and (max-width: 500px){
+      ul.top_bar_ul li.right, 
+      ul.top_bar_ul li {float: none;}
+      .top_bar_margin {margin-top:200px;}
+      .top_bar_ul{width:100%;position: fixed;}
+    }
+		
+		
+		
+	  	#btn01
+	  	{
+		  	border-radius: 23px;
+			background: linear-gradient(145deg, #4da7db, #5bc6ff);
+			box-shadow:  8px 8px 42px #3f89b4, 
+	             -8px -8px 42px #6be9ff;
+		    text-align: center;
+			align-items: center;
+			margin-bottom: -30px;
+			color:#fff;
+			text-shadow: 2px 2px #ff0000;
+			line-height:500%
+			text-decoration:none;
+			letter-spacing:10px;
+			padding: 20px 40px 20px 40px;
+		}
 	
-  </style>
+		#waifu
+		{
+			position:fixed;
+		}
+	
+	</style>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
 	<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
   </head>
 
 <body>
+<div class="header">
+  <h1>头部区域</h1>
+</div>
+    <div class="top_bar">
+    <ul class="top_bar_ul">
+    <li><a href="#" class="top_index">index</a></li>
 
+    <li><a href="#">咕咕咕</a></li>
+    <li><a href="#">pic</a></li>
+    <li><a href="#" class="top_about">about</a></li> 
+    </ul>
+    </div>
+    <div class="top_bar_margin" ></div>
+
+<div class="column">
 <h1>已经咕了</h1>
 
 <h1>我的第一个标题</h1>
@@ -120,14 +207,14 @@
 	</div>
 </div>
 
-<div id="footer" style="text-align:center;">
-<a href="咕咕咕.html">咕咕咕</a>
-</div>
-<a href="test.html"> test </a>
-</div>
-<div class="btn_div">
-<p id="btn_p"><a id="btn01" href="114/114.html">禁言抽奖</a></p>
-</div>
+	<div id="footer" style="text-align:center;">
+		<a href="咕咕咕.html">咕咕咕</a>
+	</div>
+	<a href="test.html"> test </a>
+
+	<div class="btn_div">
+		<p id="btn_p"><a id="btn01" href="114/114.html">禁言抽奖</a></p>
+	</div>
 <h1>h1   呐呐呐</h1>
 <h2>h2    呐呐</h2>
 <h3>h3     呐</h3>
@@ -137,14 +224,16 @@
 <p>-------------4-----------</p>
 <p>-------------5-----------</p>
 <p>-------------6-----------</p>
+</div>
 
 <div>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-    <div class="aplayer" data-id="5005336849" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false"
-        data-volume="0.35" data-order="random"></div>
-<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+	    <div class="aplayer" data-id="5005336849" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false"
+	        data-volume="0.35" data-order="random"></div>
+	<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
 </div>
+
 
 </body>
 
