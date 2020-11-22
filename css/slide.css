@@ -86,15 +86,15 @@ img {
 {
 	img
 	{
-		max-width: 93%;
+		max-width: 92%;
 		height: auto;
 	}
 	.ck-slide .ck-prev {
-		left: 5px;
+		left: 10px;
 		background: url(../img/slide/arrow-left.png) #000 50% no-repeat;
 	}
 	.ck-slide .ck-next {
-		right: 30px;
+		right: 26px;
 		background: url(../img/slide/arrow-right.png) #000 50% no-repeat;
 	}
 }
