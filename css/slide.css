@@ -1,5 +1,6 @@
 img {
-	border: 0;
+	max-width: 100%;
+    height: auto;
 }
 .ck-slide ul {
 	margin: 0;
@@ -79,4 +80,21 @@ img {
 }
 .ck-slidebox ul li em:hover {
 	background-color: #fe6500;
+}
+
+@media screen and (max-width: 500px)
+{
+	img
+	{
+		max-width: 93%;
+		height: auto;
+	}
+	.ck-slide .ck-prev {
+		left: 5px;
+		background: url(../img/slide/arrow-left.png) #000 50% no-repeat;
+	}
+	.ck-slide .ck-next {
+		right: 30px;
+		background: url(../img/slide/arrow-right.png) #000 50% no-repeat;
+	}
 }
