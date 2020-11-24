@@ -1,245 +1,108 @@
 <!DOCTYPE html>
 <html lang="cn">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>嘤嘤嘤 - index</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<style>
-		body 
-		{
-			background-image:url("img/pic/bg.jpg");
-			background-position:top;
-			background-repeat:no-repeat;
-			background-attachment:fixed;
-			
-		}
-		.header {
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: center;
-}		
-		.column
-		{
-			margin: auto;
-			background: rgba(255,255,255,0.75);
-			width: 75%;
-			border: 3px solid green;
-			padding: 15px;
-			border-radius: 25px;
-		}
-	  	.btn_div
-	  	{
-			text-align: center;
-			align-items: center;
-			padding: 60px;
-			margin-bottom: 60px;
-		}
+		<title>嘤嘤嘤 - index</title>
 		
-		
-    .top_bar_ul
-    {
-      list-style-type: none;
-      overflow:hidden;
-      background-color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    .top_bar_ul li
-    {
-      float:left;
-      border-right:2px solid #bbb;
-    }
-    .top_bar_ul li:last-child 
-    {
-      border-right: none;
-    }
-    
-    .top_bar_ul li a
-    {
-		
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
+		<link rel="stylesheet" href="css/index.css">
+		<!--加载live2D-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+		<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+	</head>
 
-    .top_bar_ul li a:hover:not(.top_index) 
-    {
-      background-color: #111;
-    }
-    .top_index
-    {
-      background-color: #4CAF50;
-    }
-		
-	.top_bar_margin
-	{
-		position:relitive;
-		margin-top:50px;
-	}
-    @media screen and (max-width: 500px){
-      ul.top_bar_ul li.right, 
-      ul.top_bar_ul li {float: none;border-right:0px;}
-      	.top_bar_margin{margin-top:20px;}
-      .top_bar_ul{margin-top:4px;width:100%;}
-      .column{width:90%;}
-    }
-		
-	ck-slide-wrapper img {
-	    width: 50%;
-	    height: auto;
-	}
-		
-	  	#btn01
-	  	{
-		  	border-radius: 23px;
-			background: linear-gradient(145deg, #4da7db, #5bc6ff);
-			box-shadow:  8px 8px 42px #3f89b4, 
-	             -8px -8px 42px #6be9ff;
-		    text-align: center;
-			align-items: center;
-			margin-bottom: -30px;
-			color:#fff;
-			text-shadow: 2px 2px #ff0000;
-			line-height:500%
-			text-decoration:none;
-			letter-spacing:10px;
-			padding: 20px 40px 20px 40px;
-		}
-	
-		#waifu
-		{
-			position:fixed;
-		}
-	
-	</style>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-	<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
-  </head>
-
-<body>
-<div class="header">
-  <h1>头部区域</h1>
-</div>
-    <div class="top_bar">
-    <ul class="top_bar_ul">
-    <li><a href="#" class="top_index">index</a></li>
-
-    <li><a href="#">咕咕咕</a></li>
-    <li><a href="#">pic</a></li>
-    <li><a href="#" class="top_about">about</a></li> 
-    </ul>
-    </div>
-    <div class="top_bar_margin" ></div>
-
-<div class="column">
-<h1>已经咕了</h1>
-
-<h1>我的第一个标题</h1>
-
-<p>我的第一个段落。</p>
-
-<div class="main">
-	<div class="mianc">
-		<!-- Demo start -->
-		<!-- css -->
-		<link rel="stylesheet" href="css/slide.css">
-		<style>
-		.ck-slide { width: 380px; height: 230px; margin: 0 auto;}
-		.ck-slide ul.ck-slide-wrapper { height: 320px;}
-		</style>
-		
-		<!-- html -->
-		<div class="ck-slide">
-			<ul class="ck-slide-wrapper">
-			
-				<li>
-                  <a href="img/pic1.html"><img src="img/slide/1.jpg" alt="">
-				        </a>
-				</li>
-				<li style="display:none">
-					<a href="img/pic2.html"><img src="img/slide/2.jpg" alt="">
-			
-					</a>
-				</li>
-				<li style="display:none">
-					<a href="img/pic3.html"><img src="img/slide/3.png" alt="">
-
-					</a>
-				</li>
-				<li style="display:none">
-					<a href="img/pic4.html"><img src="img/slide/4.png" alt="">
-
-					</a>
-				</li>
-				<li style="display:none">
-					<a href="img/pic5.html"><img src="img/slide/5.jpg" alt="">					
-
-					</a>
-				</li>
+	<body>
+		<!--头部区域-->
+		<div class="header">
+			<h1>头部区域</h1>
+		</div>
+		<!--导航栏-->
+		<div class="top_bar">
+			<ul class="top_bar_ul">
+				<li><a href="#" class="top_index">index</a></li>
+				<li><a href="#">咕咕咕</a></li>
+				<li><a href="#">pic</a></li>
+				<li><a href="#" class="top_about">about</a></li> 
 			</ul>
+		</div>
+		<!--间隔-->
+		<div class="top_bar_margin" ></div>
+		<!--正文-->
+		<div class="column">
+			<h1>在咕了</h1>
 			
+			<h1>我的第一个标题</h1>
 			
-			<a href="javascript:;" class="ctrl-slide ck-prev">上一张</a> <a href="javascript:;" class="ctrl-slide ck-next">下一张</a>
-			<div class="ck-slidebox">
-				<div class="slideWrap">
-					<ul class="dot-wrap">
-						<li class="current"><em>1</em></li>
-						<li><em>2</em></li>
-						<li><em>3</em></li>
-						<li><em>4</em></li>
-						<li><em>5</em></li>
-					</ul>
+			<p>我的第一个段落。</p>
+			
+			<div class="responsive">
+				<a target="_blank" href="img/pic1.html" width="380">
+					<div class="img">
+						<div class="img_l">
+							<img src="img/pre/1.jpg">
+						</div>
+						
+						<div class="desc_r">
+							<div class="desc">Add a description of the image here Add a description 
+							of the image here Add 
+							a description of the image here Add a description of 
+							the image here Add a description of the image here Add a
+							 description of the image here Add a description of the image here 
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			
+			<div class="responsive">
+				<div class="img">
+					<div class="img_l">
+						<a target="_blank" href="img/pic2.html" width="380">
+							<img src="img/pre/2.jpg">
+						</a>
+					</div>
+					
+					<div class="desc_r">
+						<div class="desc">Add a description of the image here</div>
+					</div>
 				</div>
 			</div>
-		</div>     
-		<!-- js -->
-		<script src="js/jquery-1.8.3.min.js"></script>
-        <script src="js/slide.js"></script>
-		<script>
-			$('.ck-slide').ckSlide({
-				autoPlay: true,//默认为不自动播放，需要时请以此设置
-				dir: 'x',//默认效果淡隐淡出，x为水平移动，y 为垂直滚动
-				interval:3000//默认间隔2000毫秒
-			});
-		</script>
-		<!-- Demo end -->
-	</div>
-</div>
-
-	<div id="footer" style="text-align:center;">
-		<a href="咕咕咕.html">咕咕咕</a>
-	</div>
-	<a href="test.html"> test </a>
-
-	<div class="btn_div">
-		<p id="btn_p"><a id="btn01" href="114/114.html">禁言抽奖</a></p>
-	</div>
-<h1>h1   呐呐呐</h1>
-<h2>h2    呐呐</h2>
-<h3>h3     呐</h3>
-<p>-------------1-----------</p>
-<p>-------------2-----------</p>
-<p>-------------3-----------</p>
-<p>-------------4-----------</p>
-<p>-------------5-----------</p>
-<p>-------------6-----------</p>
-</div>
-
-<div>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-	    <div class="aplayer" data-id="5005336849" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false"
-	        data-volume="0.35" data-order="random"></div>
-	<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
-</div>
-
-
-</body>
-
-
+			
+			<div style="text-align:center;">
+				<a href="咕咕咕.html">咕咕咕</a>
+			</div>
+			
+			<a href="test.html"> test </a>
+			
+			<div class="btn_div">
+				<p id="btn_p"><a id="btn01" href="114/114.html">禁言抽奖</a></p>
+			</div>
+			
+			<h1>h1   呐呐呐</h1>
+			<h2>h2    呐呐</h2>
+			<h3>h3     呐</h3>
+			<p>-------------1-----------</p>
+			<p>-------------2-----------</p>
+			<p>-------------3-----------</p>
+			<p>-------------4-----------</p>
+			<p>-------------5-----------</p>
+			<p>-------------6-----------</p>
+		
+		</div>
+		
+		<!--加载播放器-->
+		<div>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+			<div class="aplayer" data-id="5005336849" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false"
+						data-volume="0.35" data-order="random"></div>
+			<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+		</div>
+		
+		<div class="footer">
+			<h1>底部区域</h1>
+		</div>
+	</body>
 </html>
