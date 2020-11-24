@@ -158,8 +158,6 @@ body
 .img img:hover
 {
 	margin:auto;
-	width:104%;
-	height:104%;
 	filter: blur(5px);
 }
 
@@ -182,6 +180,12 @@ body
 	{
 		float:none;
 	}
+	.fixed_text
+	{
+		top:10px;
+		right:10px;
+		font-size:18px;
+	}
 }
 
 @media only screen and (max-width: 450px){
@@ -191,18 +195,17 @@ body
 		height:auto;
 	}
 	.img img{height: auto;}
-	.fixed_text{font-size:20px;}
 }
 
 .fixed_text
 {
 	position:fixed;
-	top:30px;
-	right:40px;
+	top:18px;
+	right:30px;
 	font-size:33px;
 	font-family:"Times New Roman";
 	z-index:1;
-	background:rgba(114,114,114,0.5);
+	background:rgba(114,114,114,0.4);
 	transition:transform 2s;
 }
 .fixed_text:hover
