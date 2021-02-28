@@ -100,7 +100,7 @@ body
 }
 
 
-.btn01
+#btn01
 {
 	border-radius: 23px;
 	background: linear-gradient(145deg, #4da7db, #5bc6ff);
@@ -114,6 +114,23 @@ body
 	line-height:500%
 	text-decoration none;
 	letter-spacing:10px;
+	padding: 20px 40px 20px 40px;
+}
+
+#btn02
+{
+	border-radius: 23px;
+	background: linear-gradient(145deg, #4da7db, #5bc6ff);
+	box-shadow:  8px 8px 42px #3f89b4, 
+	-8px -8px 42px #6be9ff;
+	text-align: center;
+	align-items: center;
+	margin-bottom: -30px;
+	color:#fff;
+	text-shadow: 2px 2px #ff0000;
+	line-height:500%
+	text-decoration none;
+	letter-spacing:6px;
 	padding: 20px 40px 20px 40px;
 }
 
