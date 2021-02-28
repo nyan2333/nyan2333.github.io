@@ -7,6 +7,7 @@
 	
 		<title>嘤嘤嘤 - index </title>
 		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/coinstyle.css">
 		<!--加载live2D-->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
 		<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
@@ -137,8 +138,18 @@
 				<p id="btn_p"><a id="btn01" href="114514/114.html">禁言抽奖</a></p>
 			</div>
 			<p></p>
-			<div class="btn_div">
-				<p id="btn_p"><a id="btn02" onclick="_hmt.push(['_trackEvent', 'btn', 'clicked', 'num_total'])" herf="">test_num</a></p>
+			<div >
+				<button class="tip-button">
+					<span class="tip-button__text">投币</span>
+				  	<div class="coin-wrapper">
+				    		<div class="coin">
+						      <div class="coin__middle"></div>
+						      <div class="coin__back"></div>
+						      <div class="coin__front"></div>
+				    		</div>
+				  	</div>
+				</button>
+				<script src="scripts/coin.js"></script>
 			</div>
 			
 			<div style="text-align:center;">
